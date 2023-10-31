@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.intro{
+   
+    height: 100vh;
+    width: 100% ;
+    
+   background: black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   animation: fliterr 2s forwards 4s ;
+  
+    
+
+}
+@keyframes fliterr{
+    0%{
+        filter: blur(0px);
+    }
+    50%{
+        filter: blur(5px);
+    }
+    100%{
+        filter: blur(10px);
+    }
+}
+.linebox{
+    margin: 5px;
+    height: 16px;
+    width: 25%;
+    padding: 2px;
+    border: 2px solid rgb(102, 102, 102);
+    border-radius: 20px;
+}
+.line{
+    height: 8px;
+    background: rgba(197, 195, 195, 0.481);
+    
+    width: 10px;
+    border-radius: 20px;
+    animation: loading 5s forwards;
+}
+@keyframes loading{
+    0%{
+        width: 0%;
+        
+    }
+    100%{
+        width: 100%;
+        
+        
+    }
+}
+.he{
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 1000;
+    text-shadow: 5px 5px 3px  rgb(244, 244, 244);
+}
+.btnn{
+    background-image: linear-gradient(to bottom, #010d24, #011e3a, #013555, #013d55, #006e88);
+    height: 50px;
+    width: 140px;
+    border: 0px solid black;
+    border-radius: 20px;
+    color: white; 
+ 
+}
+
+
+.btnn:hover{
+    background: transparent;
+    border: 2px solid white;
+}
+
+
+
